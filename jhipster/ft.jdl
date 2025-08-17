@@ -1,0 +1,28 @@
+// jhipster import-jdl ft.jdl 
+
+application {
+ config {
+   baseName FT
+   applicationType monolith
+   prodDatabaseType mysql
+   buildTool maven
+   packageName it.rock
+   authenticationType jwt
+   cacheProvider no
+   clientFramework angularX
+   clientPackageManager npm
+   databaseType sql
+   dtoSuffix DTO
+   enableHibernateCache true 
+   enableSwaggerCodegen false 
+   enableTranslation true
+   languages [en, fr, it]
+   reactive false
+   serverPort 8080
+   serviceDiscoveryType false
+   testFrameworks [cucumber]
+   useSass false 
+   websocket false
+ }
+ 
+}

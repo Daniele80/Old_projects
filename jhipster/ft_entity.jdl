@@ -1,0 +1,35 @@
+entity FTComponent {
+      id String
+      name String
+	  type String
+    }
+
+entity FTComponentVersion {
+      id String
+	  componentId String
+      version String
+      url String
+    }
+
+entity FTConfiguration {
+      id String
+      name String
+      enabled Boolean
+	  channel String
+      }
+      
+entity FTComponentConfiguration {
+	  id String
+	  enabled Boolean
+}
+
+
+relationship OneToOne {
+	FTComponentConfiguration{ftComponent} to FTComponent 
+    FTComponentConfiguration{ftComponentVersion} to FTComponentVersion 
+    FTComponentConfiguration{ftConfiguration} to FTConfiguration 
+    FTComponentConfiguration{parent} to FTComponent 
+}
+
+service all with serviceImpl
+paginate FTComponent,FTComponentVersion,FTConfiguration,FTComponentConfiguration with pagination
