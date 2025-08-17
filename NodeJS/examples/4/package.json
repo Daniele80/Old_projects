@@ -1,0 +1,27 @@
+{
+  "name": "myapplication",
+  "version": "0.1.1",
+  "description": "Example application",
+  "main": "index.js",
+  "author": "Daniele Rocco <daniele.rocco@accenture.com>",
+  "bin": {
+  "module-name": "./bin/myapplication"
+},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "index.js",
+  "repository": {
+  "type": "git",
+  "url": "https://...."
+},
+  "keywords": [
+  "example"
+],
+  "dependencies": {
+    "async": "~0.8.0",
+    "express": "4.2.x"
+  },  
+  "license": "MIT"
+}
+
